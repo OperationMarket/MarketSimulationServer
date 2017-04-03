@@ -1,13 +1,10 @@
 package market;
 
-import java.util.PriorityQueue;
-import java.util.Queue;
-
 public class Company {
     public String name;
     public String abrv;
 
-    private Queue<Stock> stocks;
+    private StockQueue stocks;
 
     public Company(String name, String abrev) {
         this.name = name;
@@ -16,13 +13,13 @@ public class Company {
 
     //TODO remove
     public void generateNewStock() {
-        stocks = new PriorityQueue<>();
-        stocks.add(new Stock(1.0f, this));
-        stocks.add(new Stock(2.0f, this));
-        stocks.add(new Stock(3.0f, this));
+        stocks = new StockQueue();
+        stocks.push(new Stock(1.0f, this));
+        stocks.push(new Stock(2.0f, this));
+        stocks.push(new Stock(3.0f, this));
     }
 
-    public Queue<Stock> getStocks() {
+    public StockQueue getStocks() {
         return stocks;
     }
 }

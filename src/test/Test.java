@@ -16,6 +16,9 @@ public class Test {
 
         out.writeBytes("I am Groot\n");
 
+        int size = in.read();
+        System.out.println(size);
+
         Thread.sleep(10000);
     }
 }

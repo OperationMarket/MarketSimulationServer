@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class Market {
 
-    public static HashMap<String, Queue<Stock>> stocks;
+    public static HashMap<String, StockQueue> stocks;
 
     public static void setup() {
         stocks = new HashMap<>();

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-04-03T17:21:44</date>
+  <millis>1491254504984</millis>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Starting the Server...</message>
+</record>
+<record>
+  <date>2017-04-03T17:21:45</date>
+  <millis>1491254505035</millis>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Setting up market...</message>
+</record>
+<record>
+  <date>2017-04-03T17:21:45</date>
+  <millis>1491254505040</millis>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Loading Config...</message>
+</record>
+<record>
+  <date>2017-04-03T17:21:45</date>
+  <millis>1491254505070</millis>
+  <sequence>3</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Port: 6789</message>
+</record>
+<record>
+  <date>2017-04-03T17:21:45</date>
+  <millis>1491254505073</millis>
+  <sequence>4</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Waiting for connection...</message>
+</record>
+<record>
+  <date>2017-04-03T17:21:47</date>
+  <millis>1491254507748</millis>
+  <sequence>5</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>12</thread>
+  <message>Accepted a connection!</message>
+</record>
+<record>
+  <date>2017-04-03T17:21:47</date>
+  <millis>1491254507749</millis>
+  <sequence>6</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>12</thread>
+  <message>Name: I am Groot</message>
+</record>
