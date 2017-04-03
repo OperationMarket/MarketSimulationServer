@@ -1,7 +1,6 @@
 package client;
 
 import market.Market;
-import market.Stock;
 import market.StockQueue;
 import util.MyLogger;
 
@@ -9,7 +8,6 @@ import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.InputStreamReader;
 import java.net.Socket;
-import java.util.Queue;
 
 public class Client implements Runnable {
     private Thread t;
@@ -31,8 +29,15 @@ public class Client implements Runnable {
             playerName = in.readLine();
             MyLogger.log("Name: " + playerName);
 
-            StockQueue s = Market.stocks.get("lnar");
+            StockQueue s = Market.stocks.get("lnar").clone();
             out.writeByte(s.size());
+
+            int size = s.size();
+
+            for (int i = 0; i < size; i++) {
+                MyLogger.log("Sending " + (i + 1) + " of " + size + " to " + playerName);
+                out.writeBytes(s.pop().value + "\n");
+            }
 
         } catch (Exception e) {
             MyLogger.log("Unexpected transmision failure for: " + socket.getInetAddress());

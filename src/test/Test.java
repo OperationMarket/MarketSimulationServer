@@ -5,6 +5,7 @@ import java.io.DataOutputStream;
 import java.io.InputStreamReader;
 import java.net.InetSocketAddress;
 import java.net.Socket;
+import java.util.Arrays;
 
 public class Test {
     public static void main (String[] args) throws Exception {
@@ -19,6 +20,14 @@ public class Test {
         int size = in.read();
         System.out.println(size);
 
-        Thread.sleep(10000);
+        float[] fl = new float[size];
+
+        for (int i = 0; i < size; i++) {
+            fl[i] = Float.parseFloat(in.readLine());
+        }
+
+        System.out.println(Arrays.toString(fl));
+
+        //Thread.sleep(10000);
     }
 }

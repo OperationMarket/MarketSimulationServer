@@ -2,8 +2,8 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2017-04-03T17:21:44</date>
-  <millis>1491254504984</millis>
+  <date>2017-04-03T17:38:05</date>
+  <millis>1491255485883</millis>
   <sequence>0</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -13,8 +13,8 @@
   <message>Starting the Server...</message>
 </record>
 <record>
-  <date>2017-04-03T17:21:45</date>
-  <millis>1491254505035</millis>
+  <date>2017-04-03T17:38:05</date>
+  <millis>1491255485918</millis>
   <sequence>1</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -24,8 +24,8 @@
   <message>Setting up market...</message>
 </record>
 <record>
-  <date>2017-04-03T17:21:45</date>
-  <millis>1491254505040</millis>
+  <date>2017-04-03T17:38:05</date>
+  <millis>1491255485923</millis>
   <sequence>2</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -35,8 +35,8 @@
   <message>Loading Config...</message>
 </record>
 <record>
-  <date>2017-04-03T17:21:45</date>
-  <millis>1491254505070</millis>
+  <date>2017-04-03T17:38:05</date>
+  <millis>1491255485935</millis>
   <sequence>3</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -46,8 +46,8 @@
   <message>Port: 6789</message>
 </record>
 <record>
-  <date>2017-04-03T17:21:45</date>
-  <millis>1491254505073</millis>
+  <date>2017-04-03T17:38:05</date>
+  <millis>1491255485937</millis>
   <sequence>4</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -57,8 +57,8 @@
   <message>Waiting for connection...</message>
 </record>
 <record>
-  <date>2017-04-03T17:21:47</date>
-  <millis>1491254507748</millis>
+  <date>2017-04-03T17:38:07</date>
+  <millis>1491255487842</millis>
   <sequence>5</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -68,8 +68,8 @@
   <message>Accepted a connection!</message>
 </record>
 <record>
-  <date>2017-04-03T17:21:47</date>
-  <millis>1491254507749</millis>
+  <date>2017-04-03T17:38:07</date>
+  <millis>1491255487844</millis>
   <sequence>6</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -77,4 +77,37 @@
   <method>log</method>
   <thread>12</thread>
   <message>Name: I am Groot</message>
+</record>
+<record>
+  <date>2017-04-03T17:38:07</date>
+  <millis>1491255487845</millis>
+  <sequence>7</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>12</thread>
+  <message>Sending 1 of 3 to I am Groot</message>
+</record>
+<record>
+  <date>2017-04-03T17:38:07</date>
+  <millis>1491255487847</millis>
+  <sequence>8</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>12</thread>
+  <message>Sending 2 of 3 to I am Groot</message>
+</record>
+<record>
+  <date>2017-04-03T17:38:07</date>
+  <millis>1491255487848</millis>
+  <sequence>9</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>12</thread>
+  <message>Sending 3 of 3 to I am Groot</message>
 </record>

@@ -13,6 +13,13 @@ public class StockQueue {
         len = 0;
     }
 
+    private StockQueue(StockQueue other) {
+        values = other.values.clone();
+        addIndex = other.addIndex;
+        removeIndex = other.removeIndex;
+        len = other.len;
+    }
+
     public void push(Stock s) {
         if (!(len < STOCKS_TO_KEEP))
             return;
@@ -40,5 +47,9 @@ public class StockQueue {
 
     public int size() {
         return len;
+    }
+
+    public StockQueue clone() {
+        return new StockQueue(this);
     }
 }
