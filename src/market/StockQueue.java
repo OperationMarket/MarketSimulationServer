@@ -23,6 +23,9 @@ public class StockQueue {
     }
 
     public Stock pop() {
+        if (len < 0)
+          return null;
+        
         Stock s = values[removeIndex];
         values[removeIndex] = null;
 
@@ -30,7 +33,7 @@ public class StockQueue {
             return null;
         }
 
-        removeIndex = (removeIndex + 1) % 7;
+        removeIndex = (removeIndex + 1) % STOCKS_TO_KEEP;
         len--;
         return s;
     }
