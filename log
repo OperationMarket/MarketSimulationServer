@@ -2,8 +2,8 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2017-04-03T17:38:05</date>
-  <millis>1491255485883</millis>
+  <date>2017-04-24T18:53:10</date>
+  <millis>1493074390768</millis>
   <sequence>0</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -13,8 +13,8 @@
   <message>Starting the Server...</message>
 </record>
 <record>
-  <date>2017-04-03T17:38:05</date>
-  <millis>1491255485918</millis>
+  <date>2017-04-24T18:53:10</date>
+  <millis>1493074390814</millis>
   <sequence>1</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -24,8 +24,8 @@
   <message>Setting up market...</message>
 </record>
 <record>
-  <date>2017-04-03T17:38:05</date>
-  <millis>1491255485923</millis>
+  <date>2017-04-24T18:53:10</date>
+  <millis>1493074390819</millis>
   <sequence>2</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -35,8 +35,8 @@
   <message>Loading Config...</message>
 </record>
 <record>
-  <date>2017-04-03T17:38:05</date>
-  <millis>1491255485935</millis>
+  <date>2017-04-24T18:53:10</date>
+  <millis>1493074390834</millis>
   <sequence>3</sequence>
   <logger>global</logger>
   <level>INFO</level>
@@ -46,9 +46,31 @@
   <message>Port: 6789</message>
 </record>
 <record>
-  <date>2017-04-03T17:38:05</date>
-  <millis>1491255485937</millis>
+  <date>2017-04-24T18:53:10</date>
+  <millis>1493074390835</millis>
   <sequence>4</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Starting update service...</message>
+</record>
+<record>
+  <date>2017-04-24T18:53:10</date>
+  <millis>1493074390838</millis>
+  <sequence>5</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>12</thread>
+  <message>Updating the market @ 1493074390838</message>
+</record>
+<record>
+  <date>2017-04-24T18:53:10</date>
+  <millis>1493074390839</millis>
+  <sequence>6</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>util.MyLogger</class>
@@ -57,57 +79,101 @@
   <message>Waiting for connection...</message>
 </record>
 <record>
-  <date>2017-04-03T17:38:07</date>
-  <millis>1491255487842</millis>
-  <sequence>5</sequence>
-  <logger>global</logger>
-  <level>INFO</level>
-  <class>util.MyLogger</class>
-  <method>log</method>
-  <thread>12</thread>
-  <message>Accepted a connection!</message>
-</record>
-<record>
-  <date>2017-04-03T17:38:07</date>
-  <millis>1491255487844</millis>
-  <sequence>6</sequence>
-  <logger>global</logger>
-  <level>INFO</level>
-  <class>util.MyLogger</class>
-  <method>log</method>
-  <thread>12</thread>
-  <message>Name: I am Groot</message>
-</record>
-<record>
-  <date>2017-04-03T17:38:07</date>
-  <millis>1491255487845</millis>
+  <date>2017-04-24T18:53:11</date>
+  <millis>1493074391342</millis>
   <sequence>7</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>util.MyLogger</class>
   <method>log</method>
   <thread>12</thread>
-  <message>Sending 1 of 3 to I am Groot</message>
+  <message>Updating the market @ 1493074391342</message>
 </record>
 <record>
-  <date>2017-04-03T17:38:07</date>
-  <millis>1491255487847</millis>
+  <date>2017-04-24T18:53:11</date>
+  <millis>1493074391839</millis>
   <sequence>8</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>util.MyLogger</class>
   <method>log</method>
   <thread>12</thread>
-  <message>Sending 2 of 3 to I am Groot</message>
+  <message>Updating the market @ 1493074391839</message>
 </record>
 <record>
-  <date>2017-04-03T17:38:07</date>
-  <millis>1491255487848</millis>
+  <date>2017-04-24T18:53:12</date>
+  <millis>1493074392337</millis>
   <sequence>9</sequence>
   <logger>global</logger>
   <level>INFO</level>
   <class>util.MyLogger</class>
   <method>log</method>
   <thread>12</thread>
-  <message>Sending 3 of 3 to I am Groot</message>
+  <message>Updating the market @ 1493074392337</message>
+</record>
+<record>
+  <date>2017-04-24T18:53:12</date>
+  <millis>1493074392837</millis>
+  <sequence>10</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>12</thread>
+  <message>Updating the market @ 1493074392837</message>
+</record>
+<record>
+  <date>2017-04-24T18:53:13</date>
+  <millis>1493074393337</millis>
+  <sequence>11</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>12</thread>
+  <message>Updating the market @ 1493074393337</message>
+</record>
+<record>
+  <date>2017-04-24T18:53:13</date>
+  <millis>1493074393838</millis>
+  <sequence>12</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>12</thread>
+  <message>Updating the market @ 1493074393838</message>
+</record>
+<record>
+  <date>2017-04-24T18:53:14</date>
+  <millis>1493074394338</millis>
+  <sequence>13</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>12</thread>
+  <message>Updating the market @ 1493074394338</message>
+</record>
+<record>
+  <date>2017-04-24T18:53:14</date>
+  <millis>1493074394837</millis>
+  <sequence>14</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>12</thread>
+  <message>Updating the market @ 1493074394837</message>
+</record>
+<record>
+  <date>2017-04-24T18:53:15</date>
+  <millis>1493074395338</millis>
+  <sequence>15</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>util.MyLogger</class>
+  <method>log</method>
+  <thread>12</thread>
+  <message>Updating the market @ 1493074395338</message>
 </record>
