@@ -3,7 +3,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'gcc --version'
+                sh 'apt update'
+                sh 'apt install cmake --yes'
+                sh 'cmake CMakeLists.txt'
+                sh 'make'
             }
         }
     }
