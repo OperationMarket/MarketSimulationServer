@@ -1,12 +1,9 @@
 pipeline {
-    agent { docker 'gcc'}
+    agent { docker 'gcc' }
     stages {
-        stage('Build') {
+        stage('build') {
             steps {
-                apt update
-                apt install cmake --yes
-                cmake CMakeLists.txt
-                make
+                sh 'gcc --version'
             }
         }
     }
