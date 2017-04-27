@@ -1,10 +1,10 @@
 pipeline {
-    agent { docker 'ubuntu' }
+    agent { docker 'gcc' }
     stages {
         stage('build') {
             steps {
-                sh 'apt update'
-                sh 'apt install gcc g++ make cmake --yes'
+                sh 'sudo apt update'
+                sh 'sudo apt install cmake --yes'
                 sh 'cmake CMakeLists.txt'
                 sh 'make'
             }
