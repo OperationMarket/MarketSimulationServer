@@ -3,8 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'sudo apt update'
-                sh 'sudo apt install cmake --yes'
+                sh 'su -'
+                sh 'apt update'
+                sh 'apt install cmake --yes'
                 sh 'cmake CMakeLists.txt'
                 sh 'make'
             }
