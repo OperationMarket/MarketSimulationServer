@@ -1,0 +1,14 @@
+//
+// Created by dcole on 4/27/17.
+//
+
+#ifndef MARKETSIMULATIONSERVER_LOGGER_H
+#define MARKETSIMULATIONSERVER_LOGGER_H
+
+
+class logger {
+
+};
+
+
+#endif //MARKETSIMULATIONSERVER_LOGGER_H
