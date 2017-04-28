@@ -1,14 +1,19 @@
-//
-// Created by dcole on 4/27/17.
-//
+#pragma once
+#include <string>
+#include <fstream>
+#include <time.h>
 
-#ifndef MARKETSIMULATIONSERVER_LOGGER_H
-#define MARKETSIMULATIONSERVER_LOGGER_H
-
-
-class logger {
-
+enum Level {
+    INFO,
+    DEBUG,
+    WARN,
+    ERROR
 };
 
+class Logger {
+public:
+    static bool log(std::string str, Level level);
 
-#endif //MARKETSIMULATIONSERVER_LOGGER_H
+private:
+    static std::string toString(Level level);
+};
