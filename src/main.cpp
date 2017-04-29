@@ -15,7 +15,6 @@ static int answer_to_connection (void *cls, struct MHD_Connection *connection, c
         const char *page = "Hello, World!";
         struct MHD_Response *response;
         int ret;
-
         response = MHD_create_response_from_buffer (strlen (page), (void *) page, MHD_RESPMEM_PERSISTENT);
         ret = MHD_queue_response (connection, MHD_HTTP_OK, response);
 
