@@ -4,7 +4,8 @@ project(MarketSimulationServer)
 set(CMAKE_CXX_STANDARD 11)
 set(SOURCE_FILES src/main.cpp src/util/logger.cpp src/util/logger.h)
 
-link_directories(/usr/lib/python3.5/site-packages/boost)
+find_package(Boost 1.58 COMPONENTS program_options REQUIRED)
+include_directories(${Boost_INCLUDE_DIR})
 
 add_executable(MarketSimulationServer ${SOURCE_FILES})
 
