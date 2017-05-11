@@ -1,11 +1,4 @@
-#include <cstdlib>
-#include <iostream>
-#include <memory>
-#include <utility>
 #include <boost/asio.hpp>
-#include <string>
-
-using boost::asio::ip::tcp;
 
 #include "netConnect.h"
 
