@@ -12,17 +12,22 @@ class session : public std::enable_shared_from_this<session> {
 		void start() {
 			time_t rawtime;
 			time(&rawtime);
-			std::cout << "Connection From: " << socket_.remote_endpoint().address().to_string() << " on: " << ctime (&rawtime);
 			
+			data_[max_length]='\0';
+			data_[0]='\0';
+
+			std::cout << "Connection From: " << socket_.remote_endpoint().address().to_string() << " on: " << ctime (&rawtime);
 			do_read();
 		}
 
 	private:
 		void do_read() {
 			auto self(shared_from_this());
-			socket_.async_read_some(boost::asio::buffer(data_, max_length), [this, self](boost::system::error_code ec, std::size_t length){
-				if (!ec && length < max_length) {
-
+			socket_.async_read_some(boost::asio::buffer(data_, max_length-1), [this, self](boost::system::error_code ec, std::size_t length){
+				
+				data_[length]='\0';
+				
+				if (!ec && length < max_length-1) {
 					std::string message = test(data_);
 					do_write(message.size(), message);
 				}
@@ -31,14 +36,12 @@ class session : public std::enable_shared_from_this<session> {
 
 		void do_write(std::size_t length, std::string message)
 		{
-			if(length < max_length){
+			if(length < max_length-1){
 				auto self(shared_from_this());
 				boost::asio::async_write(socket_, boost::asio::buffer(message, length), [this, self](boost::system::error_code ec, std::size_t /*length*/) {
-					if (!ec) {
-
-						socket_.shutdown(boost::asio::ip::tcp::socket::shutdown_both);
-						socket_.close();
-					}
+					
+					socket_.shutdown(boost::asio::ip::tcp::socket::shutdown_both);
+					socket_.close();
 				});
 			}
 		}
