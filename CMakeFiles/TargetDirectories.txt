@@ -1,3 +1,0 @@
-/home/ubuntu/MarketSimulationServer/CMakeFiles/edit_cache.dir
-/home/ubuntu/MarketSimulationServer/CMakeFiles/rebuild_cache.dir
-/home/ubuntu/MarketSimulationServer/CMakeFiles/MarketSimulationServer.dir

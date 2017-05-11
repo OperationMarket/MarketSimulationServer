@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/MarketSimulationServer.dir/src/main.cpp.o CMakeFiles/MarketSimulationServer.dir/src/util/logger.cpp.o  -o MarketSimulationServer -lboost_system -lboost_regex 
