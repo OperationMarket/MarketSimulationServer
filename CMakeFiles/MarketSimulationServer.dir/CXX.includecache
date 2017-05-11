@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/MarketSimulationServer/src/main.cpp
+cstdlib
+-
+iostream
+-
+memory
+-
+utility
+-
+boost/asio.hpp
+-
+string
+-
+netConnect.h
+/home/ubuntu/MarketSimulationServer/src/netConnect.h
+
+/home/ubuntu/MarketSimulationServer/src/netConnect.h
+responce.h
+/home/ubuntu/MarketSimulationServer/src/responce.h
+time.h
+-
+
+/home/ubuntu/MarketSimulationServer/src/responce.h
+string
+-
+
+/home/ubuntu/MarketSimulationServer/src/util/logger.cpp
+logger.h
+/home/ubuntu/MarketSimulationServer/src/util/logger.h
+
+/home/ubuntu/MarketSimulationServer/src/util/logger.h
+string
+-
+fstream
+-
+time.h
+-
+
