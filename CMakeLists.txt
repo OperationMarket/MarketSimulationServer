@@ -6,5 +6,5 @@ set(SOURCE_FILES src/main.cpp src/util/logger.cpp src/util/logger.h)
 
 add_executable(MarketSimulationServer ${SOURCE_FILES})
 
-
-target_link_libraries(MarketSimulationServer microhttpd)
+target_link_libraries(MarketSimulationServer libboost_system)
+target_link_libraries(MarketSimulationServer libboost_regex)
