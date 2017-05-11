@@ -31,6 +31,11 @@ class session : public std::enable_shared_from_this<session> {
 					std::string message = test(data_);
 					do_write(message.size(), message);
 				}
+				else{
+
+					socket_.shutdown(boost::asio::ip::tcp::socket::shutdown_both);
+                                        socket_.close();
+				}
 			});
 		}
 
@@ -43,6 +48,11 @@ class session : public std::enable_shared_from_this<session> {
 					socket_.shutdown(boost::asio::ip::tcp::socket::shutdown_both);
 					socket_.close();
 				});
+			}
+			else{
+
+				socket_.shutdown(boost::asio::ip::tcp::socket::shutdown_both);
+				socket_.close();
 			}
 		}
 
