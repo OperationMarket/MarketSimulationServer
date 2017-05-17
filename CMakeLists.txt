@@ -11,3 +11,4 @@ add_executable(MarketSimulationServer ${SOURCE_FILES})
 
 target_link_libraries(MarketSimulationServer boost_system)
 target_link_libraries(MarketSimulationServer boost_regex)
+target_link_libraries(MarketSimulationServer pthread)
