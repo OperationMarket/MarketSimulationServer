@@ -1,15 +1,18 @@
 #include <boost/asio.hpp>
-
 #include "netConnect.h"
 
 int main()
 {
+        try{
 
-	boost::asio::io_service io_service;
+                boost::asio::io_service io_service;
+                server s(io_service, 38768);
+                io_service.run();
+        }
+        catch (std::exception& e){
 
-	server s(io_service, 38768);
+                std::cerr << "Exception: " << e.what() << "\n";
+        }
 
-	io_service.run();
-
-	return 0;
+        return 0;
 }
