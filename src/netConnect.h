@@ -1,5 +1,6 @@
 #include "responce.h"
 #include <iostream>
+#include <boost/bind.hpp>
 #include <boost/asio.hpp>
 
 using boost::asio::ip::tcp;
@@ -16,10 +17,10 @@ class session : public std::enable_shared_from_this<session> {
 
 		void do_read();
 		void do_write(std::size_t, std::string);
-
 		tcp::socket socket_;
-		enum { max_length = 1024 };
-		char data_[max_length];
+		int max_length = 1024;
+		boost::asio::streambuf b;
+		void handler(const boost::system::error_code&, std::size_t);
 };
 
 class server{
